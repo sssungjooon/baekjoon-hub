@@ -32,5 +32,7 @@ for i in range(1, n):
         else :
             arr[i][j] += max(arr[i-1][j-1], arr[i-1][j])
 
-print(max(arr[-1]))
+    # 위의 값들을 아래에 더하는 식이므로
+    # 제일 끝 값의 최대값이 최대가 되는 경로가 된다.
 
+print(max(arr[n-1]))
