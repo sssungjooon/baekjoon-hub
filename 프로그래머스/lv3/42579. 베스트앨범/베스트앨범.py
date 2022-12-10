@@ -20,7 +20,7 @@ def solution(genres, plays):
     # items()함수를 사용하여 딕셔너리에 있는 키와 값들의 쌍으로 얻자
     dic = sorted(dic.items(), key=(lambda x:x[1]), reverse = True) 
     
-    # # 많이 재생된 장르를 차례대로 탐색
+    # 많이 재생된 장르를 차례대로 탐색
     for genre in dic: 
         tmp = album[genre[0]]
         # 재생된 횟수를 기준으로 내림차순 정렬
