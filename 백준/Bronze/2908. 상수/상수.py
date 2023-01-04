@@ -1,0 +1,6 @@
+numbers = list(input())
+A = list(numbers[2]+numbers[1]+numbers[0])
+B = list(numbers[6]+numbers[5]+numbers[4])
+new_A = int(''.join(A))
+new_B = int(''.join(B))
+print(max(new_A, new_B))
